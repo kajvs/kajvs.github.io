@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的专属匹配精灵</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>你的专属匹配精灵</h1>
+        </header>
+
+        <div class="divider"></div>
+
+        <!-- MBTI多精灵选择面板 默认隐藏 -->
+        <div id="spriteSelect" style="display: none; text-align: center; padding: 2rem 1rem;">
+            <h3 id="selectTitle" style="color:#663399; margin-bottom: 24px;"></h3>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button id="optionA" class="btn"></button>
+                <button id="optionB" class="btn btn-light"></button>
+            </div>
+        </div>
+
+        <!-- 原精灵结果展示容器 -->
+        <div id="resultBox">
+            <div class="result-card">
+                <img id="spriteImg" src="" alt="精灵图片">
+                <!-- JS输出格式：精灵名（MBTI） -->
+                <div class="sprite-name" id="spriteName"></div>
+                <div class="sprite-desc" id="spriteDesc"></div>
+                <div style="margin-top:20px;">
+                    <a href="test.html" class="btn">重新测试</a>
+                    <a href="../index.html" class="btn btn-light">返回首页</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="copyright">
+            <p>&copy; 2026 卡嘉斯cc 洛克精灵性格测试</p>
+        </footer>
+    </div>
+
+    <script src="../js/sprite.js"></script>
+    <script>
+        window.onload = renderSprite;
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡嘉斯cc</title>
+    <style>
+        /* 全局重置与基础设定 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F8F5FC; /* 非常淡的紫色背景 */
+            color: #1d1d1f; /* 苹果风格的深黑灰色字体 */
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 容器布局 */
+        .container {
+            max-width: 680px; /* 限制最大宽度，营造精致感 */
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        /* 顶部个人介绍区域 */
+        .header {
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .bio {
+            font-size: 16px;
+            color: #6e6e73; /* 次级信息稍浅 */
+            max-width: 500px;
+        }
+
+        /* 紫色分割线 */
+        .divider {
+            height: 1px;
+            background-color: #E6D9F7; /* 淡紫色线条 */
+            margin-bottom: 50px;
+        }
+
+        /* 二次元图片展示区 */
+        .gallery-section h2 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #9176C2; /* 紫色标题 */
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 60px;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(145, 118, 194, 0.08); /* 淡紫色阴影 */
+            aspect-ratio: 1/1;
+            /* 占位图背景，你可以换成 <img> 标签 */
+            background-image: linear-gradient(45deg, #f0e6fa 25%, transparent 25%), 
+                              linear-gradient(-45deg, #f0e6fa 25%, transparent 25%), 
+                              linear-gradient(45deg, transparent 75%, #f0e6fa 75%), 
+                              linear-gradient(-45deg, transparent 75%, #f0e6fa 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #c4b0e5;
+            font-size: 12px;
+        }
+
+        /* 链接区域 */
+        .links-section h2 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #9176C2;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+        }
+
+        .link-list {
+            list-style: none;
+        }
+
+        .link-list li {
+            margin-bottom: 5px;
+        }
+
+        .link-list a {
+            display: block;
+            color: #1d1d1f;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 15px 0;
+            border-bottom: 1px solid #E6D9F7; /* 紫色下划线 */
+            transition: opacity 0.2s ease;
+        }
+
+        .link-list a:hover {
+            opacity: 0.6;
+        }
+
+        .link-list a::after {
+            content: " →";
+            color: #9176C2;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .link-list a:hover::after {
+            opacity: 1;
+        }
+
+        /* 版权声明样式 */
+        .copyright {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #E6D9F7; /* 与分割线同色系的上边框 */
+            text-align: center;
+        }
+
+        .copyright p {
+            font-size: 14px;
+            color: #9176C2; /* 紫色文字，与标题同色 */
+            opacity: 0.8; /* 稍微降低透明度，更低调 */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 1. 个人介绍 -->
+        <header class="header">
+            <h1>你好👋</h1>
+            <p class="bio">这里是Kajus的个人网站，你可以在这里找到一些关于我的东西。</p>
+            <p class="bio">我正在学习Godot以及写小说。</p>                       
+            <p class="bio">我还打算在这里写一些东西，比如博客，但是现在还没写。</p>           
+        </header>
+
+        <div class="divider"></div>
+
+        <!-- 2. 二次元图片展示 -->
+        <section class="gallery-section">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <!-- 你可以把 div 换成 <img src="..." alt=""> -->
+                <div class="gallery-item">Image 1</div>
+                <div class="gallery-item">Image 2</div>
+                <div class="gallery-item">Image 3</div>
+                <div class="gallery-item">Image 4</div>
+            </div>
+        </section>
+
+        <!-- 3. 超链接 -->
+        <section class="links-section">
+            <h2>Links</h2>
+            <ul class="link-list">
+                <li><a href="rocombti/">洛克王国精灵测试</a></li>
+                <li><a href="https://space.bilibili.com/5261713?spm_id_from=333.1387.0.0">哔哩哔哩</a></li>
+                <li><a href="https://github.com/KAJVS">Github</a></li>
+                <li><a href="bsmbti/">BlackSouls人格测试</a></li>
+            </ul>
+        </section>
+
+        <!-- 版权声明区域 -->
+        <footer class="copyright">
+            <p>&copy; 2026 卡嘉斯cc. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

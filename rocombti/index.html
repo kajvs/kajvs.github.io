@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洛克精灵性格测试</title>
+    <!-- 引入外部CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        /* 首页B站关注区块专属样式 */
+        .bili-box {
+            margin: 40px 0;
+            padding: 28px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(145, 118, 194, 0.08);
+            text-align: center;
+        }
+        .bili-box a {
+            text-decoration: none;
+            display: block;
+        }
+        .bili-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #9176C2;
+            margin-bottom: 16px;
+        }
+        .bili-img {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #E6D9F7;
+        }
+        /* 去除返回链接下划线 */
+        .back-home-link {
+            text-decoration: none;
+        }
+        .back-home-link:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 页面头部标题 -->
+        <header class="page-header">
+            <h1>测试你最像洛克王国哪只人气精灵✨</h1>
+            <p class="desc-text">每只宠物拥有独一无二的性格气质，完成简单性格测试，匹配与你灵魂契合的精灵伙伴。</p>
+            <p class="desc-text">收录迪莫、火神、雪影娃娃、翼王、罗隐等共计30只精灵。既包含水蓝蓝和花衣蝶这样的美丽精灵，也有彩虹独角兽这样的手法精灵。</p>
+            <p class="desc-text">可以到B站评论区留下建议，比如你想要加入的精灵和对于题目的建议等，我会看评论和更新网站。</p>
+        </header>
+
+        <!-- 新增B站关注分栏 -->
+        <div class="bili-box">
+            <a href="https://space.bilibili.com/5261713?spm_id_from=333.1387.0.0" target="_blank">
+                <div class="bili-title">请关注我的B站账号 kajvs 非常感谢！</div>
+                <img class="bili-img" src="images/zhuye3.jpg" alt="B站账号截图">
+            </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- 紫白格子装饰卡片（仅首页使用） -->
+        <div class="decor-box">
+            <h2>开始性格匹配测试</h2>
+            <p>只需回答24道选择题，即可生成专属精灵匹配结果</p>
+            <a href="html/test.html" class="btn">立即答题</a>
+        </div>
+
+        <!-- 返回主站链接 -->
+        <section>
+            <a href="../" class="back-home-link" style="color:#9176C2;">← 返回卡嘉斯cc</a>
+        </section>
+
+        <!-- 底部版权 -->
+        <footer class="copyright">
+            <p>&copy; 2026 卡嘉斯cc 洛克精灵性格测试</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+/* 全局重置与基础设定 淡紫简约苹果风 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F5FC; /* 淡紫色页面背景 */
+    color: #1d1d1f;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 居中容器统一尺寸 */
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* 页面头部标题区域 */
+.page-header {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.desc-text {
+    font-size: 16px;
+    color: #6e6e73;
+    margin-bottom: 8px;
+}
+
+/* 紫色分割线条 */
+.divider {
+    height: 1px;
+    background-color: #E6D9F7;
+    margin-bottom: 50px;
+}
+
+/* 仅首页专用格子装饰卡片 */
+.decor-box {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(145, 118, 194, 0.08);
+    /* 紫白格子图案 */
+    background-image: linear-gradient(45deg, #f0e6fa 25%, transparent 25%), 
+                      linear-gradient(-45deg, #f0e6fa 25%, transparent 25%), 
+                      linear-gradient(45deg, transparent 75%, #f0e6fa 75%), 
+                      linear-gradient(-45deg, transparent 75%, #f0e6fa 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.decor-box h2 {
+    color: #9176C2;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.decor-box p {
+    color: #6e6e73;
+    margin-bottom: 25px;
+}
+
+/* 答题卡片 纯白无格子，保证文字清晰 */
+.question-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(145, 118, 194, 0.08);
+    padding: 28px;
+    margin-bottom: 24px;
+}
+
+.question-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: #1d1d1f;
+}
+
+.option-item {
+    margin-bottom: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 结果卡片 纯白无格子 */
+.result-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(145, 118, 194, 0.08);
+    padding: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.result-card img {
+    width: 240px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sprite-name {
+    font-size: 26px;
+    color: #9176C2;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.sprite-desc {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* 按钮通用样式 */
+.btn {
+    display: inline-block;
+    background-color: #9176C2;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.25s ease;
+    margin: 0 6px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-light {
+    background: transparent;
+    color: #9176C2;
+    border: 1px solid #9176C2;
+}
+
+/* 答题页按钮容器 */
+.btn-wrap {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 底部版权栏 */
+.copyright {
+    margin-top: 80px;
+    padding-top: 30px;
+    border-top: 1px solid #E6D9F7;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 14px;
+    color: #9176C2;
+    opacity: 0.8;
+}
+/* 自定义单选框：紫色主题，文字可点击 */
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    /* 扩大点击区域 */
+    padding: 6px 8px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+/* 鼠标悬浮选项背景淡紫，提升手感 */
+.option-item:hover {
+    background-color: #f3ecfc;
+}
+
+/* 隐藏原生蓝色单选圆圈 */
+.option-item input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #c4b0e5;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+/* 选中后内部紫色圆点 */
+.option-item input[type="radio"]:checked::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #9176C2;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 选中外圈边框加深 */
+.option-item input[type="radio"]:checked {
+    border-color: #9176C2;
+}
+/* 首页返回主页链接，去除下划线 */
+.back-home-link {
+    text-decoration: none;
+}
+.back-home-link:hover {
+    opacity: 0.7;
+}

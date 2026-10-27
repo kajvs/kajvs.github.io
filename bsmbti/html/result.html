@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的专属Black Souls匹配角色</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>你匹配到的BlackSouls角色</h1>
+        </header>
+        <div class="divider"></div>
+        <div class="result-card">
+            <img id="spriteImg" src="" alt="角色图片">
+            <div class="sprite-name" id="spriteName"></div>
+            <div class="sprite-desc" id="spriteDesc"></div>
+            <div class="btn-wrap">
+                <a href="test.html" class="btn">重新测试</a>
+                <a href="../index.html" class="btn btn-light">返回首页</a>
+            </div>
+        </div>
+        <footer class="copyright">
+            <p>&copy; 2026 卡嘉斯cc BlackSouls MBTI Test</p>
+        </footer>
+    </div>
+    <script src="../js/sprite.js"></script>
+    <script>
+        window.onload = renderSprite;
+    </script>
+</body>
+</html>
